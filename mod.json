@@ -1,0 +1,32 @@
+{
+	"geode": "3.5.0",
+	"gd": {
+		"win": "2.206",
+		"android": "2.206",
+		"mac": "2.206",
+		"ios": "2.206"
+	},
+	"id": "anekobtw.attempts-limiter",
+	"name": "attempts limiter",
+	"version": "v1.0.0",
+	"developer": "anekobtw",
+	"description": "Limiting the attempts in Geometry Dash.",
+    "settings": {
+        "attempts-slider": {
+            "name": "The amount of attempts",
+            "type": "int",
+            "default": 50,
+            "min": 0,
+            "max": 100,
+            "control": {
+				"arrows": true,
+				"arrow-step": 1,
+				"big-arrows": false,
+				"big-arrow-step": 5,
+				"slider": true,
+				"slider-step": 1,
+				"input": true
+            }
+        }
+	}
+}
