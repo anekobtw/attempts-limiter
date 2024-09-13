@@ -8,12 +8,12 @@
 	},
 	"id": "anekobtw.attempts-limiter",
 	"name": "attempts limiter",
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"developer": "anekobtw",
 	"description": "Limiting the attempts in Geometry Dash.",
     "settings": {
         "attempts-slider": {
-            "name": "The amount of attempts",
+            "name": "Amount of attempts",
             "type": "int",
             "default": 50,
             "min": 0,

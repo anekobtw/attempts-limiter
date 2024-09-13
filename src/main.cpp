@@ -14,7 +14,7 @@ class $modify(MyLevelInfoLayer, LevelInfoLayer) {
         auto button = CCMenuItemSpriteExtra::create(
             CCSprite::createWithSpriteFrameName("GJ_infoBtn_001.png"),
             this,
-            menu_selector(MyLevelInfoLayer::onInfo)
+            menu_selector(MyLevelInfoLayer::onBtnClicked)
         );
 
         auto menu = this->getChildByIDRecursive("left-side-menu");
@@ -27,7 +27,7 @@ class $modify(MyLevelInfoLayer, LevelInfoLayer) {
     }
 
 public:
-    void onInfo(CCObject*) {
+    void onBtnClicked(CCObject*) {
 		int attempts = Mod::get()->template getSettingValue<int64_t>("attempts-slider");
         std::string info;
         if (attempts >= 50) {
@@ -70,7 +70,7 @@ public:
         auto button = CCMenuItemSpriteExtra::create(
             CCSprite::createWithSpriteFrameName("GJ_infoIcon_001.png"),
             this,
-            menu_selector(MyLevelInfoLayer::onInfo)
+            menu_selector(MyLevelInfoLayer::onBtnClicked)
         );
 
         auto menu = this->getChildByIDRecursive("right-button-menu");
